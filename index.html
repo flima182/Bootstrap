@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./bootstrap/style/custom.css">
+    <link rel="stylesheet" href="./bootstrap/style/custom.css?v1">
 
     <title>aula bootstrap</title>
 </head>
 
 <body>
 
-    <header>
+    <header class="container-fluid">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -36,19 +36,21 @@
     <section id="sobre">
         <div class="container">
             <div class="row">
-                <div class="col-md-7 col-sm-12">
+                <div class="col-sm-12 col-md-7 ">
                     <h2>Sobre nós</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam pariatur, molestias sit commodi
-                        consequuntur, earum optio ex eveniet tempora cupiditate ab quisquam dolorem, harum
-                        exercitationem
-                        voluptatibus voluptates corrupti! Quod, nemo?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sequi quibusdam harum veniam,
-                        fuga quia earum odio, facere vel illo sint quae delectus. Et, quaerat accusantium vitae
-                        exercitationem quibusdam odio!</p>
-                    <a class="btn btn-lg btn-success">Botão</a>
+                    <p>Na Visite uma floresta, nossa paixão é levar você para o coração da natureza, onde o mundo urbano
+                        se funde com a beleza intocada das florestas. Somos uma empresa dedicada a proporcionar
+                        experiências inesquecíveis, conectando pessoas com os ambientes naturais mais exuberantes do
+                        mundo.</p>
+
+                    <p>Nossa jornada começou com um profundo amor pela natureza e um compromisso inabalável em
+                        compartilhar essa maravilha com o mundo. Desde então, temos trabalhado incansavelmente para
+                        criar itinerários únicos, permitindo que você explore as florestas de uma forma que respeita e
+                        preserva o ambiente natural.</p>
+                    <a class="btn btn-lg btn-success">Fale com um especialista</a>
                 </div>
-                <div class="col-md-5 col-sm-12">
-                    <img src="./image/floresta-1.jpg" alt="floresta 1" class="img-fluid">
+                <div class="col-sm-12 col-md-5 ">
+                    <img src="./image/floresta-1.jpg" alt="floresta 1" class="img-fluid" id="floresta-1">
                 </div>
 
             </div>
@@ -63,25 +65,31 @@
                     <div class="card">
                         <img src="./image/floresta-2.jpg" alt="floresta 2" class="img-fluid">
                         <div class="card-body">
-                            <h5 class="card-title">Lorem ipsum dolor</h5>
-                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">ver produto</a>
+                            <h5 class="card-title">Foresta de Inverno</h5>
+                            <p class="card-text">A floresta de inverno é um cenário de conto de fadas, onde árvores
+                                despidas se destacam contra a neve brilhante, criando uma paisagem serena e mágica,
+                                repleta de beleza gelada.</p>
+                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">Saiba mais</a>
                         </div>
                     </div>
                     <div class="card">
                         <img src="./image/floresta-3.jpg" alt="floresta 3" class="img-fluid">
                         <div class="card-body">
-                            <h5 class="card-title">Lorem ipsum dolor</h5>
-                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                            <a class="btn btn-primary" href="#produto-2">ver produto</a>
+                            <h5 class="card-title">Floresta de Outono</h5>
+                            <p class="card-text">A floresta de outono é uma sinfonia de cores quentes. Folhas douradas e
+                                vermelhas dançam ao vento, criando uma tapeçaria de tons vibrantes que transformam a
+                                natureza em pura magia.</p>
+                            <a class="btn btn-primary" href="#produto-2">Saiba mais</a>
                         </div>
                     </div>
                     <div class="card">
                         <img src="./image/floresta-4.jpg" alt="floresta 4" class="img-fluid">
                         <div class="card-body">
-                            <h5 class="card-title">Lorem ipsum dolor</h5>
-                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                            <a class="btn btn-primary" href="#produto-3">ver produto</a>
+                            <h5 class="card-title">Floresta de verão</h5>
+                            <p class="card-text">A floresta de verão é um paraíso verde e exuberante. Árvores em pleno
+                                esplendor, pássaros cantando alegremente e a brisa quente criam um refúgio natural cheio
+                                de vida e vitalidade.</p>
+                            <a class="btn btn-primary" href="#produto-3">Saiba mais</a>
                         </div>
                     </div>
 
@@ -94,7 +102,7 @@
             <div class="row">
                 <div class="col-md-6 col-sm-12">
                     <h2>Contato</h2>
-                    <p>Ficou interessado? Preencah os campos do formulário para receber uma cotação.</p>
+                    <p>Ficou interessado? Preencha os campos do formulário para receber uma cotação.</p>
                 </div>
                 <div class="col-md-6 col-sm-12">
                     <form class="form">
@@ -157,6 +165,25 @@
             </div>
         </div>
     </div>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6" id="texto-1">
+                    <h1>Visite uma floresta </h1>
+                </div>
+                <div class="col-sm-12 col-md-6">
+
+                    <h2>Entre em contato</h2>
+                    <p>(11) 9 9999-9999</p>
+                    <p>visiteumafloresta@mato.com.br</p>
+
+                </div>
+            </div>
+        </div>
+
+    </footer>
 
     <!-- unidade = largura da area dividida por 12 
 
